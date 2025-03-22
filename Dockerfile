@@ -5,6 +5,8 @@ USER root
 # Define variables
 ARG VERSION=1.11.2
 ENV JENKINS_HOME=/home/jenkins
+LABEL org.opencontainers.image.source=https://github.com/Harry-Moore-dev/jenkins-docker-images
+LABEL org.opencontainers.image.description="Jenkins agent with Terraform installed"
 
 WORKDIR ${JENKINS_HOME}
 
